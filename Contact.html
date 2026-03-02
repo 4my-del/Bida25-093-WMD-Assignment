@@ -52,6 +52,31 @@
             </nav>
 
         <main class="container my-5">
+            <h2>Order Form</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="item" class="form-label">Select Item</label>
+                    <select class="form-select" id="item" required>
+                        <option value="">Choose an item</option>
+                        <option value="cake">Cake</option>
+                        <option value="cupcake">Cupcake</option>
+                        <option value="pastry">Pastry</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Special Requests</label>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit Order</button>
+            </form>
             <h2>Contact us</h2>
             <p>If you'd like to get in touch, feel free to email us at <a href="mailto:bida25-093@thuto.bac.ac.bw" class="btn btn-success">bida25-093@thuto.bac.ac.bw</a>.</p>
         </main>
