@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order - Sweet Cravings Bakery</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sweet Cravings Bakery</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container my-5">
+
+  <h1 class="text-center mb-4">Place Your Order</h1>
+
+  <form>
+
+    <!-- CUSTOMER DETAILS -->
+    <h4>Customer Details</h4>
+
+    <div class="mb-3">
+      <label class="form-label">Full Name</label>
+      <input type="text" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input type="email" class="form-control">
+    </div>
+
+    <!-- PRODUCT SECTION -->
+    <h4 class="mt-4">Select Product</h4>
+
+    <div class="mb-3">
+      <label class="form-label">Category</label>
+      <select class="form-select" required>
+        <option value="">Choose category</option>
+        <option>Cakes</option>
+        <option>Pastries</option>
+        <option>Custom</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Item</label>
+      <select class="form-select" required>
+        <option value="">Choose item</option>
+        <option>Chocolate Cake - P180</option>
+        <option>Red Velvet Cake - P200</option>
+        <option>Cupcakes (6 pack) - P120</option>
+        <option>Donuts (box) - P80</option>
+      </select>
+    </div>
+
+    <!-- DELIVERY -->
+    <div class="mb-3">
+      <label class="form-label">Place of Delivery</label>
+      <select class="form-select" required>
+        <option value="">Choose location</option>
+        <option>Gaborone</option>
+        <option>Tlokweng</option>
+      </select>
+    </div>
+
+    <!-- TOTAL PRICE -->
+    <div class="mb-3">
+      <label class="form-label">Total Price</label>
+      <input type="text" class="form-control" placeholder="P0.00" readonly>
+    </div>
+
+    <!-- BUTTON -->
+    <button type="submit" class="btn btn-success w-100">Pay Now</button>
+
+  </form>
+
+</main>
+
+<footer class="text-center bg-light p-3">
+  <p>&copy; 2026 Sweet Cravings Bakery. Designed by Amy Mokgadi.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
